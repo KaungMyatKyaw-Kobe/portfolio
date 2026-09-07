@@ -22,6 +22,18 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  /* ---------- Scrollspy (active nav link follows scroll position) ----------
+     Spy on <html>, not <body>: body's `overflow-x: hidden` forces the browser
+     to compute overflow-y as `auto` (CSS overflow interaction quirk), which
+     makes ScrollSpy treat body itself as the IntersectionObserver root instead
+     of the viewport — body never scrolls, so the active link never updates. */
+  if (window.bootstrap && bootstrap.ScrollSpy) {
+    new bootstrap.ScrollSpy(document.documentElement, {
+      target: '#mainNav',
+      rootMargin: '-76px 0px -40%'
+    });
+  }
+
   /* ---------- Navbar scroll state ---------- */
   var navbar = document.getElementById('mainNav');
   function handleNavScroll() {

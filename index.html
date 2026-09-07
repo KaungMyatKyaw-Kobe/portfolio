@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <title>Kaung Myat Kyaw (Kobe) | Data Engineer &amp; Data Analyst</title>
+  <meta name="description" content="Portfolio of Kaung Myat Kyaw (Kobe) — Data Engineer &amp; Data Analyst specializing in Apache Airflow, dbt, ClickHouse, Power BI and enterprise data platforms.">
+
+  <!-- Set theme before first paint to avoid a flash of the wrong theme -->
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('theme');
+        var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/icons/tab_icon.png">
+  <link rel="apple-touch-icon" href="assets/icons/tab_icon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="90" tabindex="0">
+
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#home">Kobe<span class="accent">.</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent"
+        aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#initiatives">Initiatives</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+          <li class="nav-item ms-lg-2 d-flex align-items-center">
+            <button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch to light theme" title="Toggle theme">
+              <i class="bi bi-moon-stars-fill theme-icon-dark"></i>
+              <i class="bi bi-sun-fill theme-icon-light"></i>
+            </button>
+          </li>
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-outline-light btn-sm px-3" href="https://flowcv.com/resume/h33ksh8eft" target="_blank" rel="noopener">
+              <i class="bi bi-download me-1"></i>Resume
+            </a>
+          </li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <a class="btn btn-accent btn-sm px-3" href="#contact">Get in Touch</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== Hero ===== -->
+  <header id="home" class="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="grid-overlay"></div>
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+    </div>
+    <div class="container hero-inner">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-6">
+          <p class="eyebrow reveal">
+            <span class="dot-live"></span> Available &middot; Bangkok, Thailand
+          </p>
+          <h1 class="hero-title reveal">
+            Hi, I'm <span class="accent">Kaung Myat Kyaw</span><br>
+            <span class="text-muted-2">(Kobe)</span>
+          </h1>
+          <p class="hero-role reveal">
+            <span id="typewriter"></span><span class="cursor">|</span>
+          </p>
+          <p class="hero-lead reveal">
+            I design and build scalable data pipelines and analytics platforms —
+            turning raw, fragmented data from systems like SAP, MSSQL and Kafka
+            into reliable, high-performance warehouses and dashboards that drive
+            business decisions.
+          </p>
+          <div class="hero-actions reveal">
+            <a href="#contact" class="btn btn-accent btn-lg px-4">
+              <i class="bi bi-envelope-fill me-2"></i>Get in Touch
+            </a>
+            <a href="https://flowcv.com/resume/h33ksh8eft" target="_blank" rel="noopener" class="btn btn-outline-light btn-lg px-4">
+              <i class="bi bi-download me-2"></i>Download Resume
+            </a>
+            <a href="#experience" class="btn btn-outline-light btn-lg px-4">
+              View Experience
+            </a>
+          </div>
+          <div class="hero-socials reveal">
+            <a href="mailto:kaungmyatkyaw.developer@gmail.com" aria-label="Email" title="Email"><i class="bi bi-envelope"></i></a>
+            <a href="tel:+66928900076" aria-label="Phone" title="Phone"><i class="bi bi-telephone"></i></a>
+            <a href="https://www.linkedin.com/in/kaungmyatkyaw-dataanalyst/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="terminal-card reveal" role="img" aria-label="Terminal summary of profile">
+            <div class="terminal-header">
+              <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+              <span class="terminal-title">kobe@data-platform:~</span>
+            </div>
+            <div class="terminal-body">
+              <p><span class="prompt">$</span> whoami</p>
+              <p class="out">Kaung Myat Kyaw &middot; Data Engineer &amp; Data Analyst</p>
+              <p><span class="prompt">$</span> current_role</p>
+              <p class="out">Data Engineer @ ThaiBev, Bangkok — Nov 2025–Present</p>
+              <p><span class="prompt">$</span> core_stack</p>
+              <p class="out">[Airflow, dbt, ClickHouse, MSSQL, Kafka, Power BI]</p>
+              <p><span class="prompt">$</span> experience --years</p>
+              <p class="out">10+ yrs total &middot; 5+ yrs Data Engineering / BI</p>
+              <p><span class="prompt">$</span> status</p>
+              <p class="out out-accent">Building reliable, production-grade data pipelines...<span class="blink">_</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll to About section">
+      <i class="bi bi-chevron-down"></i>
+    </a>
+  </header>
+
+  <!-- ===== About ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <p class="section-eyebrow reveal">About Me</p>
+      <h2 class="section-title reveal">Data professional bridging engineering and business insight</h2>
+      <div class="row gy-5 mt-3">
+        <div class="col-lg-7 reveal">
+          <p class="lead-text">
+            I'm a Data Engineer &amp; Data Analyst based in Bangkok, Thailand, specializing in Data
+            Engineering, Data Warehousing, Business Intelligence (BI), and Analytics Engineering.
+            I design scalable data architectures, build end-to-end ETL/ELT pipelines, and transform
+            complex datasets into high-performance analytical solutions that support data-driven
+            business decisions.
+          </p>
+          <p class="lead-text">
+            I've built and optimized production-grade data workflows using Apache Airflow, dbt,
+            ClickHouse, and MSSQL — with hands-on expertise in data modeling, incremental processing
+            strategies, and database performance tuning across sales, finance, and operational domains.
+          </p>
+          <p class="lead-text">
+            On the BI side, I have a strong background developing solutions with Power BI, Microsoft
+            Fabric, and Power Apps — interactive dashboards, automated workflows, and business
+            applications that improve user experience and operational efficiency. I'm passionate
+            about combining strong engineering practice with business requirements so data stays
+            accurate, accessible, and actionable.
+          </p>
+          <div class="about-tags">
+            <span class="tag">Data Engineering</span>
+            <span class="tag">Data Warehousing</span>
+            <span class="tag">Analytics Engineering</span>
+            <span class="tag">Business Intelligence</span>
+            <span class="tag">Pipeline Orchestration</span>
+          </div>
+        </div>
+        <div class="col-lg-5 reveal">
+          <div class="stat-grid">
+            <div class="stat-card">
+              <div class="stat-number" data-count="10">0</div>
+              <div class="stat-suffix">+</div>
+              <p class="stat-label">Years in Software &amp; Technology<br><span>(2016 – Present)</span></p>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" data-count="5">0</div>
+              <div class="stat-suffix">+</div>
+              <p class="stat-label">Years in Data Engineering &amp; BI<br><span>(2020 – Present)</span></p>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" data-count="3">0</div>
+              <div class="stat-suffix"></div>
+              <p class="stat-label">Companies<br><span>ThaiBev, Grand Royal Group, MIT</span></p>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" data-count="14">0</div>
+              <div class="stat-suffix"></div>
+              <p class="stat-label">Professional Certificates<br><span>Data, BI &amp; Cloud</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Skills ===== -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <p class="section-eyebrow reveal">Skills &amp; Technologies</p>
+      <h2 class="section-title reveal">Tools I use to move and shape data</h2>
+
+      <div class="row g-4 mt-3">
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="skill-card">
+            <div class="skill-icon"><i class="bi bi-diagram-3-fill"></i></div>
+            <h3>Data Engineering &amp; Orchestration</h3>
+            <div class="skill-tags">
+              <span>Apache Airflow</span>
+              <span>dbt</span>
+              <span>ETL / ELT Pipelines</span>
+              <span>Apache Kafka</span>
+              <span>Incremental Processing</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="skill-card">
+            <div class="skill-icon"><i class="bi bi-database-fill"></i></div>
+            <h3>Databases &amp; Warehousing</h3>
+            <div class="skill-tags">
+              <span>Microsoft SQL Server</span>
+              <span>Azure SQL Server</span>
+              <span>ClickHouse</span>
+              <span>Transact-SQL</span>
+              <span>Data Warehousing</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="skill-card">
+            <div class="skill-icon"><i class="bi bi-bar-chart-line-fill"></i></div>
+            <h3>BI &amp; Analytics</h3>
+            <div class="skill-tags">
+              <span>Power BI</span>
+              <span>Microsoft Fabric</span>
+              <span>SQL Server Reporting Services</span>
+              <span>Data Visualization</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="skill-card">
+            <div class="skill-icon"><i class="bi bi-shuffle"></i></div>
+            <h3>Automation &amp; Integration</h3>
+            <div class="skill-tags">
+              <span>SSIS</span>
+              <span>Azure Data Factory</span>
+              <span>Power Apps</span>
+              <span>Power Automate</span>
+              <span>SAP S/4HANA Integration</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="skill-card">
+            <div class="skill-icon"><i class="bi bi-code-slash"></i></div>
+            <h3>Programming</h3>
+            <div class="skill-tags">
+              <span>Python</span>
+              <span>Transact-SQL</span>
+              <span>ASP.NET (Windows App)</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="skill-card">
+            <div class="skill-icon"><i class="bi bi-translate"></i></div>
+            <h3>Languages</h3>
+            <div class="skill-tags">
+              <span>Burmese — Native</span>
+              <span>English — B1/B2</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Experience ===== -->
+  <section id="experience" class="section">
+    <div class="container">
+      <p class="section-eyebrow reveal">Professional Experience</p>
+      <h2 class="section-title reveal">A decade building and evolving data systems</h2>
+
+      <div class="timeline mt-5">
+
+        <!-- ThaiBev -->
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Nov 2025 – Present</span>
+            <h3>Data Engineer</h3>
+            <p class="timeline-company">ThaiBev &middot; Bangkok, Thailand</p>
+
+            <h4 class="timeline-subgroup">Data Engineering &amp; Orchestration</h4>
+            <ul>
+              <li>Designed, developed, and maintained production-grade Apache Airflow DAGs to orchestrate end-to-end data pipelines across multiple business domains.</li>
+              <li>Built automated ETL/ELT workflows integrating MSSQL, ClickHouse, Kafka, and cloud storage platforms to support scalable data processing.</li>
+              <li>Developed reusable DAG frameworks and modular pipeline architectures to improve maintainability, reliability, and operational efficiency.</li>
+              <li>Optimized workflow scheduling, task dependencies, and incremental processing strategies to reduce pipeline execution time and system resource consumption.</li>
+            </ul>
+
+            <h4 class="timeline-subgroup">dbt &amp; Data Modeling</h4>
+            <ul>
+              <li>Developed and managed dbt models across staging, intermediate, and mart layers following modern data warehouse and analytics engineering practices.</li>
+              <li>Implemented incremental processing strategies, including append, delete+insert, and ReplacingMergeTree approaches, to improve transformation performance and scalability.</li>
+              <li>Designed and optimized fact and dimension data models supporting reporting, KPI monitoring, analytics, and business decision-making.</li>
+              <li>Applied ClickHouse partitioning and ordering strategies to improve query performance for large-scale analytical workloads.</li>
+            </ul>
+
+            <h4 class="timeline-subgroup">Performance Optimization &amp; Data Quality</h4>
+            <ul>
+              <li>Optimized SQL queries and ClickHouse storage engines (MergeTree family) for high-volume analytical workloads.</li>
+              <li>Enhanced database efficiency through optimized partition keys, sorting keys, query logic, and incremental filtering techniques.</li>
+              <li>Performed source-to-target data quality analysis across MSSQL, Kafka, and ClickHouse pipelines to identify discrepancies, missing records, and consistency issues.</li>
+            </ul>
+
+            <div class="timeline-tags">
+              <span>Airflow</span><span>dbt</span><span>ClickHouse</span><span>MSSQL</span><span>Kafka</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grand Royal Group -->
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">May 2022 – Oct 2025</span>
+            <h3>Assistant Software Development Manager</h3>
+            <p class="timeline-company">Grand Royal Group International &middot; Yangon, Myanmar</p>
+            <ul>
+              <li>Developed BI reports aligned with end-user requirements, ensuring actionable insights for business decision-making.</li>
+              <li>Troubleshot and resolved report-related issues, including bugs and data discrepancies.</li>
+              <li>Leveraged the Power Platform to build a Power App for Event Registration with Medical Checkup, handling form creation, data management, and workflow automation.</li>
+              <li>Designed and implemented ETL procedures to maintain a reliable flow of data into the data warehouse, optimizing data loading for reporting.</li>
+              <li>Integrated SAP S/4HANA with the enterprise data warehouse using SSIS, enabling accurate and real-time reporting.</li>
+              <li>Developed and optimized SSIS packages to automate data extraction from SAP, reducing manual effort and improving dashboard refresh performance.</li>
+              <li>Created Power BI reports using SAP S/4HANA data covering financial, inventory, sales, and operational metrics.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Power BI</span><span>SSIS</span><span>SAP S/4HANA</span><span>Power Apps</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Myanmar Information Technology -->
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Jan 2016 – Apr 2022</span>
+            <h3>Myanmar Information Technology Pte Ltd</h3>
+            <p class="timeline-company">Yangon, Myanmar</p>
+
+            <h4 class="timeline-subgroup">BI &amp; Data Integration <span class="timeline-subdate">Dec 2020 – Apr 2022</span></h4>
+            <ul>
+              <li>Designed and implemented a centralized data server and synchronization service to consolidate branch data on a regular basis.</li>
+              <li>Developed ETL processes to improve the efficiency and speed of loading data into Power BI reports.</li>
+              <li>Scheduled ETL processes using SQL Server Agent Jobs and Azure Data Factory to ensure timely updates for transactional data.</li>
+              <li>Built a dedicated Report View table for CMHL and City Express to support data analysis needs.</li>
+              <li>Integrated Microsoft Dynamics 365 with Azure SQL Database via SSIS packages for data extraction and storage.</li>
+              <li>Optimized ETL processes to improve performance and report refresh times.</li>
+            </ul>
+
+            <h4 class="timeline-subgroup">Software Developer (Team Lead) <span class="timeline-subdate">Oct 2018 – Dec 2020</span></h4>
+            <ul>
+              <li>Led a technical team delivering ERP and retail system services to hundreds of V5 ERP and V5 Retail customers.</li>
+              <li>Supervised troubleshooting of critical business issues and resolution of software bugs, improving incident resolution times.</li>
+              <li>Directed design and development of customized system features and client-specific business reports.</li>
+              <li>Managed and executed data migration projects from V5 Retail to SAP with a focus on accuracy and reliability.</li>
+              <li>Mentored and guided team members, promoting skill development and collaborative problem-solving.</li>
+            </ul>
+
+            <h4 class="timeline-subgroup">Software Developer <span class="timeline-subdate">Jan 2016 – Oct 2018</span></h4>
+            <ul>
+              <li>Delivered technical support and services to hundreds of customers using the V5 ERP System.</li>
+              <li>Diagnosed and resolved business issues, bugs, and system errors to minimize downtime.</li>
+              <li>Designed customized features and bespoke business reports based on client specifications.</li>
+              <li>Built and deployed data export solutions integrating with external servers.</li>
+              <li>Facilitated accurate and efficient data migration from V5 Retail to the SAP System.</li>
+            </ul>
+
+            <div class="timeline-tags">
+              <span>SSIS</span><span>Azure Data Factory</span><span>Power BI</span><span>Dynamics 365</span><span>SAP</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Key Initiatives ===== -->
+  <section id="initiatives" class="section section-alt">
+    <div class="container">
+      <p class="section-eyebrow reveal">Key Initiatives</p>
+      <h2 class="section-title reveal">Selected work &amp; impact</h2>
+      <p class="section-sub reveal">Signature initiatives from my professional experience — no dedicated open-source
+        repositories exist for these enterprise projects, so they're presented here as they were delivered on the job.</p>
+
+      <div class="row g-4 mt-3">
+        <div class="col-md-6 reveal">
+          <div class="project-card">
+            <div class="project-icon"><i class="bi bi-diagram-3"></i></div>
+            <h3>Enterprise Data Pipeline Platform</h3>
+            <p class="project-company">ThaiBev</p>
+            <p>Built production-grade Apache Airflow orchestration and dbt modeling (staging → intermediate → mart)
+              across MSSQL, ClickHouse, and Kafka, with reusable DAG frameworks and ClickHouse partitioning/ordering
+              strategies to support large-scale analytical workloads.</p>
+            <div class="project-tags">
+              <span>Airflow</span><span>dbt</span><span>ClickHouse</span><span>Kafka</span><span>MSSQL</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 reveal">
+          <div class="project-card">
+            <div class="project-icon"><i class="bi bi-arrow-repeat"></i></div>
+            <h3>SAP S/4HANA Enterprise Integration</h3>
+            <p class="project-company">Grand Royal Group International</p>
+            <p>Integrated SAP S/4HANA with the enterprise data warehouse using SSIS, automating data extraction to
+              reduce manual effort and improve dashboard refresh performance, then delivered Power BI reports covering
+              financial, inventory, sales, and operational metrics.</p>
+            <div class="project-tags">
+              <span>SAP S/4HANA</span><span>SSIS</span><span>Power BI</span><span>Data Warehouse</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 reveal">
+          <div class="project-card">
+            <div class="project-icon"><i class="bi bi-clipboard2-pulse"></i></div>
+            <h3>Event Registration with Medical Checkup</h3>
+            <p class="project-company">Grand Royal Group International</p>
+            <p>Built a Power App on the Microsoft Power Platform handling form creation, data management, and
+              workflow automation for event registration and medical checkup processes.</p>
+            <div class="project-tags">
+              <span>Power Apps</span><span>Power Automate</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 reveal">
+          <div class="project-card">
+            <div class="project-icon"><i class="bi bi-hdd-network"></i></div>
+            <h3>Centralized BI &amp; Data Integration Hub</h3>
+            <p class="project-company">Myanmar Information Technology Pte Ltd</p>
+            <p>Designed a centralized data server and synchronization service consolidating branch data, scheduled
+              via SQL Server Agent Jobs and Azure Data Factory, and integrated Microsoft Dynamics 365 with Azure SQL
+              Database through SSIS to power Power BI reporting for CMHL and City Express.</p>
+            <div class="project-tags">
+              <span>SSIS</span><span>Azure Data Factory</span><span>Dynamics 365</span><span>Power BI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Education ===== -->
+  <section id="education" class="section">
+    <div class="container">
+      <p class="section-eyebrow reveal">Education</p>
+      <h2 class="section-title reveal">Academic background</h2>
+      <div class="row mt-4">
+        <div class="col-lg-8 reveal">
+          <div class="education-card">
+            <div class="education-icon"><i class="bi bi-mortarboard-fill"></i></div>
+            <div>
+              <span class="timeline-date">2010 – 2015</span>
+              <h3>Bachelor of Computer Science (B.C.Sc)</h3>
+              <p class="timeline-company">University of Computer Studies, Yangon (UCSY)</p>
+              <p>UCSY is one of the higher institutions under Myanmar's Ministry of Education, conducting
+                teaching and research across computer science, computer technology, and information technology.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Certifications ===== -->
+  <section id="certifications" class="section section-alt">
+    <div class="container">
+      <p class="section-eyebrow reveal">Certifications</p>
+      <h2 class="section-title reveal">Continuous learning</h2>
+
+      <div class="row g-3 mt-3" id="certGrid">
+        <!-- populated by both markup + JS collapse toggle -->
+        <div class="col-sm-6 col-lg-4 reveal cert-item"><a class="cert-card" href="https://www.udemy.com/certificate/UC-f1acbc62-5e7e-43d3-9ac6-9ab28e8c17c8/" target="_blank" rel="noopener"><i class="bi bi-patch-check-fill"></i><span>Power BI for HR: Visualize HR Data Using Power BI</span></a></div>
+        <div class="col-sm-6 col-lg-4 reveal cert-item"><a class="cert-card" href="https://www.linkedin.com/learning/certificates/3082b966def8f741a818b9d363bf261d1f9dc51cf062b8777819a4a12f55399a" target="_blank" rel="noopener"><i class="bi bi-patch-check-fill"></i><span>Implementing a Data Warehouse with SQL Server 2022</span></a></div>
+        <div class="col-sm-6 col-lg-4 reveal cert-item"><a class="cert-card" href="https://www.linkedin.com/learning/certificates/ab415628d2d88b5d323c3239a7777d7fdad469758f1ac4988afdc988c91f4e3d" target="_blank" rel="noopener"><i class="bi bi-patch-check-fill"></i><span>Microsoft SQL Server 2022 Essential Training</span></a></div>
+        <div class="col-sm-6 col-lg-4 reveal cert-item"><a class="cert-card" href="https://www.linkedin.com/learning/certificates/12a7596565e5cfa6047206bef263a4ab62c9ec97af828ef05c43f882acc5ce64" target="_blank" rel="noopener"><i class="bi bi-patch-check-fill"></i><span>Advance Your MS SQL Server Skills</span></a></div>
+        <div class="col-sm-6 col-lg-4 reveal cert-item"><a class="cert-card" href="https://www.linkedin.com/learning/certificates/a7c39f1daa6139a3df01ccc8d5edfb9f42bfd9c2ede1e7cf0815dcd5bee32ef2" target="_blank" rel="noopener"><i class="bi bi-patch-check-fill"></i><span>Microsoft Fabric Data Flows and Data Storage</span></a></div>
+        <div class="col-sm-6 col-lg-4 reveal cert-item"><a class="cert-card" href="https://www.linkedin.com/learning/certificates/b840cf17563bcafaffd0df217ec0925b34fc2739bf0cd542a7f8c9e627000022" target="_blank" rel="noopener"><i class="bi bi-patch-check-fill"></i><span>SQL Server Integration Services</span></a></div>
+        <div class="col-sm-6 col-lg-4 reveal cert-item"><a class="cert-card" href="https://www.linkedin.com/learning/certificates/98d4def0cfdf8d5e5959026fcf44c0779740811452a34dc54df492392757b41b" target="_blank" rel="noopener"><i class="bi bi-patch-check-fill"></i><span>SQL Server: Reporting Services</span></a></div>
+        <div class="col-sm-6 col-lg-4 reveal cert-item"><a class="cert-card" href="https://www.linkedin.com/learning/certificates/e5fb1abfa747515a97642ce59c76979f5c58c036c4efc123b6699fc3dd35a2f3" target="_blank" rel="noopener"><i class="bi bi-patch-check-fill"></i><span>Learning Microsoft Fabric: A Data Analytics and Engineering Preview</span></a></div>
+        <div class="col-sm-6 col-lg-4 reveal cert-item"><a class="cert-card" href="https://www.udemy.com/certificate/UC-f4458ec9-230c-4f4e-bc59-72e066224fc5/" target="_blank" rel="noopener"><i class="bi bi-patch-check-fill"></i><span>Agile Leadership: Become An Agile Leader</span></a></div>
+        <div class="col-sm-6 col-lg-4 reveal cert-item"><a class="cert-card" href="https://www.linkedin.com/learning/certificates/e45ae8d1f6276064300cd5e93915dc00c98e60acf2bd88abcdb259322c1523a2" target="_blank" rel="noopener"><i class="bi bi-patch-check-fill"></i><span>Complete Guide to Databricks for Data Engineering</span></a></div>
+        <div class="col-sm-6 col-lg-4 reveal cert-item"><a class="cert-card" href="https://www.udemy.com/certificate/UC-36813a99-967b-4bbf-b122-0e173510fe11/" target="_blank" rel="noopener"><i class="bi bi-patch-check-fill"></i><span>The Complete Hands-On Introduction to Apache Airflow 3</span></a></div>
+        <div class="col-sm-6 col-lg-4 reveal cert-item"><a class="cert-card" href="https://www.udemy.com/certificate/UC-a5c0198d-9fb2-4282-bdb8-9eb8fdc39941/" target="_blank" rel="noopener"><i class="bi bi-patch-check-fill"></i><span>Apache Airflow: The Hands-On Guide</span></a></div>
+        <div class="col-sm-6 col-lg-4 reveal cert-item"><a class="cert-card" href="https://www.udemy.com/certificate/UC-2e4c8a72-b218-493f-a882-880b34d63874/" target="_blank" rel="noopener"><i class="bi bi-patch-check-fill"></i><span>ClickHouse: The Beginner's Guide</span></a></div>
+        <div class="col-sm-6 col-lg-4 reveal cert-item"><a class="cert-card" href="https://www.udemy.com/certificate/UC-0cb74578-0ec6-4806-8c4f-5d6ff8a2a147/" target="_blank" rel="noopener"><i class="bi bi-patch-check-fill"></i><span>The Complete dbt Bootcamp: Zero to Hero</span></a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section id="contact" class="section section-dark">
+    <div class="container">
+      <p class="section-eyebrow reveal">Contact</p>
+      <h2 class="section-title reveal">Let's build something reliable together</h2>
+      <p class="section-sub reveal">
+        Open to Data Engineering, Data Analytics, and Analytics Engineering opportunities. Feel free to reach out.
+      </p>
+
+      <div class="row gy-4 mt-3">
+        <div class="col-lg-5 reveal">
+          <div class="contact-info-list">
+            <a class="contact-info-item" href="mailto:kaungmyatkyaw.developer@gmail.com">
+              <i class="bi bi-envelope-fill"></i>
+              <div><span>Email</span><strong>kaungmyatkyaw.developer@gmail.com</strong></div>
+            </a>
+            <a class="contact-info-item" href="tel:+66928900076">
+              <i class="bi bi-telephone-fill"></i>
+              <div><span>Phone</span><strong>+66 92 890 0076</strong></div>
+            </a>
+            <a class="contact-info-item" href="https://www.linkedin.com/in/kaungmyatkyaw-dataanalyst/" target="_blank" rel="noopener">
+              <i class="bi bi-linkedin"></i>
+              <div><span>LinkedIn</span><strong>Kaung Myat Kyaw</strong></div>
+            </a>
+            <div class="contact-info-item">
+              <i class="bi bi-geo-alt-fill"></i>
+              <div><span>Location</span><strong>Bangkok, Thailand</strong></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7 reveal">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label" for="fname">Name</label>
+                <input type="text" class="form-control" id="fname" name="name" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="femail">Email</label>
+                <input type="email" class="form-control" id="femail" name="email" required>
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="fsubject">Subject</label>
+                <input type="text" class="form-control" id="fsubject" name="_subject">
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="fmessage">Message</label>
+                <textarea class="form-control" id="fmessage" name="message" rows="5" required></textarea>
+              </div>
+              <!-- Honeypot field for spam bots — hidden from real visitors -->
+              <input type="text" name="_gotcha" class="d-none" tabindex="-1" autocomplete="off">
+              <div class="col-12">
+                <button type="submit" class="btn btn-accent btn-lg px-4" id="contactSubmit">
+                  <i class="bi bi-send-fill me-2"></i>Send Message
+                </button>
+                <span class="form-note" id="formNote"></span>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="#home" class="navbar-brand">Kobe<span class="accent">.</span></a>
+        <ul class="footer-nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#initiatives">Initiatives</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="footer-socials">
+          <a href="mailto:kaungmyatkyaw.developer@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
+          <a href="tel:+66928900076" aria-label="Phone"><i class="bi bi-telephone"></i></a>
+          <a href="https://www.linkedin.com/in/kaungmyatkyaw-dataanalyst/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+      <hr>
+      <p class="footer-copy">&copy; <span id="year"></span> Kaung Myat Kyaw (Kobe). All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button id="backToTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
